@@ -1,5 +1,59 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
-
-body{
+body {
+    background-color: green;
+    font-family: 'Segoe UI Symbol', 'Noto Sans Symbols', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .card {
+    width: 250px;
+    height: 350px;
     background: white;
-}
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .top-suit, .bottom-suit {
+    position: absolute;
+    font-size: 60px;
+  }
+  
+  .top-suit {
+    top: 15px;
+    left: 20px;
+  }
+  
+  .bottom-suit {
+    bottom: 15px;
+    right: 20px;
+    transform: rotate(180deg);
+  }
+  
+  .heart, .diamond {
+    color: red;
+  }
+  
+  .spade, .club {
+    color: black;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
